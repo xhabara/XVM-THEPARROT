@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#canvas-container {
+  position: relative;
+}
+
+.hacker-button {
+  background-color: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 6px 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.hacker-button:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+.hacker-button.active {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.hacker-slider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 5px;
+  background: #0f0;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.hacker-slider:hover {
+  opacity: 1;
+}
+
+.hacker-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border: 2px solid #0f0;
+  cursor: pointer;
+}
+
+.hacker-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border: 2px solid #0f0;
+  cursor: pointer;
+}
